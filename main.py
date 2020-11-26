@@ -1,12 +1,12 @@
 import cv2
 import numpy as np
-import requests
+#import requests
 
 #url = "http://192.168.1.121:4747/video"
 
 #net = cv2.dnn.readNet('yolov3.weights', 'yolov3.cfg')
-net = cv2.dnn.readNet('yolov3small.weights', 'yolov3small.cfg')
-#net = cv2.dnn.readNet('yolov3tiny.weights', 'yolov3tiny.cfg')
+#net = cv2.dnn.readNet('yolov3small.weights', 'yolov3small.cfg')
+net = cv2.dnn.readNet('yolov3tiny.weights', 'yolov3tiny.cfg')
 classes = []
 with open('coco.names', 'r') as f:
     classes = f.read().splitlines()
